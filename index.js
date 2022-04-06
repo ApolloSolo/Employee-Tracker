@@ -9,7 +9,7 @@ const db = require("./db/connection");
 const apiRoutes = require('./routes/apiRoutes/index');
 const inquirer = require("inquirer");
 
-const {Roles} = require('./routes/apiRoutes/rolesRoutes')
+const {Start} = require('./lib/Start');
 
 // Express middleware
 app.use(express.urlencoded({ extended: false }));
@@ -17,19 +17,8 @@ app.use(express.json());
 
 //app.use('/api', apiRoutes);
 
-//Move this controler to an index route and call it here. 
-inquirer
-      .prompt({
-        type: "list",
-        message: "What would you like to do?",
-        name: "action",
-        choices: ["Yes", "No"],
-      })
-      .then(({ action }) => {
-        if(action === "Yes") {
-          new Roles().askTask();
-        }
-      })
+new Start().begin();
+
 
 
 db.connect((err) => {
