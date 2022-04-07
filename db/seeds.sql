@@ -45,9 +45,3 @@ VALUES
 ("Olly", "Dren", 11, 2),
 ("Delora", "Merrion", 12, 2),
 ("Sa'di", "Gillian", 13, 2);
-
-`SELECT a.*, b.last_name "Manager"
-    FROM employees a JOIN employees b
-    ON (a.manager_id = b.id);`
-
-  
