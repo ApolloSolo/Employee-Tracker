@@ -26,4 +26,4 @@ Testing methods have not been established at this time.
 ## E-mail
 appsolo.tech@gmail.com
 ## Walkthrough
-### [Video](https://watch.screencastify.com/v/gExqmOxjquhbxJL7wW9H);
+### [Video](https://watch.screencastify.com/v/gExqmOxjquhbxJL7wW9H)
